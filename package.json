@@ -1,0 +1,26 @@
+{
+  "name": "integrated-pos",
+  "private":"true",
+  "version": "0.0.0",
+  "packageManager": "pnpm",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "format": "turbo run format",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "turbo": "^2.0.0"
+  },
+  "workspaces":[
+    "apps/*",
+    "packages/*"
+  ],
+  "keywords": [],
+  "author": "Einstein Bulinda",
+  "license": "ISC",
+  "type": "commonjs"
+}

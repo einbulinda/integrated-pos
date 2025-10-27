@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@integrated-pos/ui";
 
 export default function Home() {

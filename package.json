@@ -6,8 +6,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev:web": "turbo run dev --filter=web-shop --filter=pos --parallel",
+    "dev:mobile:shop": "cd apps/mobile-shop && expo start --tunnel",
+    "dev:mobile:admin": "cd apps/mobile-admin && cross-env EXPO_DEV_SERVER_PORT=8082 expo start --tunnel",
     "build": "turbo build",
-    "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "format": "turbo run format",
     "test": "echo \"Error: no test specified\" && exit 1"
